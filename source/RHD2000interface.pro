@@ -1,8 +1,10 @@
 TEMPLATE      = app
 
-QT            += widgets multimedia
+QT            += widgets
 
 CONFIG        += static
+
+LIBS += -L./ -l okFrontPanel -ldl
 
 macx:{
 QMAKE_RPATHDIR += /users/intan/qt/5.7/clang_64/lib
