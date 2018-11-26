@@ -18,9 +18,9 @@ Verify that these are in the path by doing `which <command name>`.
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/neuroelectronics/intan-rhd2000-interface-ubuntu.git`
-2. Navigate to `source/` directory: `cd source/`
+2. Navigate to `source/` directory: `cd intan-rhd2000-interface-ubuntu/source/`
 3. Use `qmake-qt4` to generate a Makefile from the Qt project file: `qmake-qt4 RHD2000interface.pro`
-4. Open the Makefile in the `source/` directory and modify the following:
+4. Open the Makefile in the `source/` directory (`gedit Makefile`) and modify the following:
     a. Add `-std=c++11` to the `CXXFLAGS`
     b. Change `-02` to `-03` in both the `CFLAGS` and `CXXFLAGS`
 5. Run `make`
